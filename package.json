@@ -21,7 +21,8 @@
     "cross-env": "^5.2.1",
     "express": "^4.17.1",
     "polka": "^1.0.0-next.6",
-    "sirv": "^0.4.2"
+    "sirv": "^0.4.2",
+    "shimport": "github:antoncom/shimport-object-blob-error-patched-for-ie"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

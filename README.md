@@ -22,6 +22,6 @@ As Sapper doesn't support legacy browsers, like IE, the main goal of that minima
 
 To achieve this the following changes were done:
 1. Polifill.io integration
-2. shimport@ hot fix was applied
+2. shimport@ hot fix was applied. Just one line was added to shimport@1.0.1 [see this commit](https://github.com/antoncom/shimport-object-blob-error-patched-for-ie/commit/479870b3e5e421d3c52031b96b8af6429933bd7c)
 
-As a result, there are no any javascript errors when visitors browse Sapper with IE. They can use navigation and see all content which is generated with SSR.
+As a result, there are no any javascript errors when visitors browse Sapper with IE. They can use navigation, provided by Sapper, and see all content which is generated with SSR.
