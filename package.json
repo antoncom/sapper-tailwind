@@ -12,15 +12,16 @@
     "cy:open": "cypress open",
     "test": "run-p --race dev cy:run",
     "watch:tailwind": "postcss static/tailwind.css -o static/index.css -w",
-    "build:tailwind": "NODE_ENV=production postcss static/tailwind.css -o static/index.css"
+    "build:tailwind": "NODE_ENV=production postcss static/tailwind.css -o static/index.css",
+    "postinstall": "cp -r -v node_modules/shimport node_modules/sapper/node_modules"
   },
   "dependencies": {
     "compression": "^1.7.4",
     "cross-env": "^5.2.1",
     "express": "^4.17.1",
     "polka": "^1.0.0-next.6",
-    "sirv": "^0.4.2",
-    "shimport": "github:antoncom/shimport-object-blob-error-patched-for-ie"
+    "shimport": "github:antoncom/shimport-object-blob-error-patched-for-ie",
+    "sirv": "^0.4.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
